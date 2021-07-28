@@ -1,0 +1,14 @@
+.customer {width:450px; margin:10px auto; border:1px solid #999; padding:20px}
+.customer h2 {text-align:center; font-size:30px; margin-bottom:20px; font-weight:500;}
+.customer p {margin-bottom:15px;}
+.customer label {display:inline-block; width:100px;}
+.customer input {width:300px; height:35px; padding:0 15px; box-sizing:border-box;}
+.customer button {width:80px; height:35px; background:#333; color:white; border:none; margin-right:15px;}
+.customer .users {color:tomato; margin-top:45px;}
+.customer table {width:100%;}
+.customer table .name {width:120px;}
+.customer table .addr {width:120px;}
+.customer table .list {}
+.customer table th, .customer table td  {text-align:center; border-bottom:1px solid #dcdcdc; padding:10px 0;}
+.customer table th {border-top:2px solid #000; background:tomato; color:#fff;}
+.customer table td{}

@@ -1,0 +1,87 @@
+.mybox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mybox .box {
+  cursor: pointer;
+}
+
+.mybox .box.red {
+  background: red;
+  width: 100px;
+  height: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mybox .box.red:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.mybox .box.green {
+  background: green;
+  width: 150px;
+  height: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mybox .box.green:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.mybox .box.blue {
+  background: blue;
+  width: 200px;
+  height: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mybox .box.blue:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.mybox .box.pink {
+  background: pink;
+  width: 150px;
+  height: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mybox .box.pink:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.mybox .box.tomato {
+  background: tomato;
+  width: 100px;
+  height: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mybox .box.tomato:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.mybox .box.skyblue {
+  background: skyblue;
+  width: 150px;
+  height: 80px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mybox .box.skyblue:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}

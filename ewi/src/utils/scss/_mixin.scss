@@ -1,0 +1,3 @@
+@function vw($val){
+	@return ($val*100)/768 * 1rem;
+}

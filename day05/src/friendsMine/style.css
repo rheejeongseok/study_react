@@ -1,0 +1,23 @@
+.Friend {width: 400px; border: 1px solid #999; padding:20px; margin:20px auto; position:relative;}
+.Friend h1 {font-size:25px; font-weight:500; margin-bottom:15px;}
+.Friend .chk {position:absolute; right:20px; top:20px; display:block; background:#333; color:#fff; width:120px; padding:5px 5px; border-radius:15px;}
+.Friend .chk input {margin-right: 10px;}
+.Friend .btn {text-align:center; margin:15px auto;}
+.Friend .btn button {padding:15px 45px; border:none; }
+.Friend .btn button:first-child {margin-right: 10px;}
+.Friend ul {}
+.Friend ul li{display:flex; margin-bottom:5px; }
+.Friend ul li p{width: 100px; height: 100px; border-radius:50%; overflow:hidden; position:relative;}
+.Friend ul li p img{position:absolute; left:-10px;}
+.Friend ul li div{width:230px; margin-left:40px; padding-top:20px; position:relative;}
+.Friend ul li div strong{display:block; margin-bottom:5px;}
+.Friend ul li div span{}
+.Friend ul li div button{position:absolute; right:0; top:50%; transform:translateY(-50%); width:50px; height:50px; border-radius:50%; color:#fff; background:#333; border:none;}
+
+.Friend .formadd {padding:20px; background:beige;}
+.Friend .formadd p{margin-bottom:5px;}
+.Friend .formadd p label{display:inline-block; width:80px;}
+.Friend .formadd p input{width:120px; height:30px; padding:0 10px; box-sizing:border-box; transition:2s; background:white;}
+.Friend .formadd p input.aa {background:red;}
+.Friend .formadd p:nth-child(3) input{ width:220px;}
+.Friend .formadd button{width:100%; border:none; height:40px; margin-top:20px; color:#333; font-size:20px;}

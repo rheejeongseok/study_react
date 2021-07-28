@@ -1,0 +1,8 @@
+.TodoList {}
+.TodoList li {padding:15px 30px; border-bottom:1px dotted #fff; background:tomato;}
+.TodoList li span {margin-right:40px; color:#fff; cursor:pointer;}
+.TodoList li em {color:#fff; cursor:pointer;}
+.TodoList li button {float:right; width:50px; height:30px; border:none;}
+.TodoList li.on {background:black;}
+.TodoList li.on span {color:skyblue; text-decoration:underline;}
+.TodoList li.on em {color:skyblue; text-decoration:underline;}

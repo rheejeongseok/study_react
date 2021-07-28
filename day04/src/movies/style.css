@@ -1,0 +1,9 @@
+.gallery {margin:1600px; margin:20px auto; display:flex; flex-wrap:wrap; flex-direction:row;}
+.gallery article {display:flex; margin:10px; background:#efefef; width:500px; height:350px; }
+.gallery article .left {}
+.gallery article .left img {width:250px; height:350px;}
+.gallery article .right {width:220px; height:350px; margin-left:15px;}
+.gallery article .right h3 {font-size:20px; padding-top:30px; margin-bottom:10px;}
+.gallery article .right ul {margin-bottom:20px;}
+.gallery article .right li {margin-bottom:20px;}
+.gallery article .right button {width:100px; height:35px; background:black; color:white;}

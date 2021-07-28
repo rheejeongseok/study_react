@@ -1,0 +1,74 @@
+.musicWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.musicWrap .left {
+  margin: 0 20px 0 10px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.musicWrap .left .imgWrap {
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.musicWrap .left img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.musicWrap .left .music {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.musicWrap .right {
+  width: 100%;
+}
+
+.musicWrap .right > div {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted black;
+}
+
+.musicWrap .right > div > span:first-child {
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.musicWrap .right > div > span:first-child ::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 10px;
+  background: red;
+}
+
+.musicWrap .right > div:last-child {
+  border-bottom: 0;
+}

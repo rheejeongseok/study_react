@@ -1,0 +1,14 @@
+/* eslint-disable import/no-anonymous-default-export */
+export default [
+   {id:1, singer:'Crush', age:30, type:'solo', debut:'12.12', birth:'92.05.03', fans:217077, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/006/74/710/674710_20201019170754_500.jpg?0d0d4847c666332b981be2adfa7562d2/melon/resize/416/quality/80/optimize'},
+   {id:2, singer:'IU', age:29, type:'solo', debut:'08.09', birth:'93.05.16', fans:733487, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/002/61/143/261143_20210325180240_500.jpg?61e575e8653e5920470a38d1482d7312/melon/resize/416/quality/80/optimize'},
+   {id:3, singer:'DEAN', age:30, type:'solo', debut:'15.07', birth:'92.11.10', fans:159196, image:'https://cdnimg.melon.co.kr/cm/artistcrop/images/008/80/630/880630_500.jpg?c03bc54e8fb49054b5a2cc8d5c7a9ca6/melon/resize/416/quality/80/optimize'},
+   {id:4, singer:'Colde', age:28, type:'solo', debut:'16.09', birth:'94.05.10', fans:35015, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/011/83/063/1183063_20210126101258_500.jpg?60623b6f8079ec6be59ba44b597d9bca/melon/resize/416/quality/80/optimize'},
+   {id:5, singer:'Gallant', age:31, type:'solo', debut:'13.05', birth:'91.11.14', fans:22706, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/008/68/887/868887_500.jpg?eeb9b2b82e939a66da4fa7633e41a6dc/melon/resize/416/quality/80/optimize'},
+   {id:6, singer:'Wonstein', age:27, type:'solo', debut:'18.05', birth:'95.05.06', fans:21663, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/017/02/472/1702472_20200826105259_500.jpg?33e3796d9905c4e35d794aef1e2c7777/melon/resize/416/quality/80/optimize'},
+   {id:7, singer:'DPR LIVE', age:29, type:'duo', debut:'17.02', birth:'93.01.01', fans:73607, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/009/43/516/943516_20200303152533_500.jpg?d142032c97fcaf9dcf72b7b922a2d5c7/melon/resize/416/quality/80/optimize'},
+   {id:8, singer:'Nucsal', age:35, type:'solo', debut:'14.02', birth:'87.03.24', fans:25666, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/006/72/461/672461_20200929114146_500.jpg?f6156bd955585a87ff946656eae74b64/melon/resize/416/quality/80/optimize'},
+   {id:9, singer:'Loco', age:33, type:'solo', debut:'13.01', birth:'89.12.25', fans:120910, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/006/88/432/688432_20201014150323_500.jpg?ce2be090f5a6f34819c89a1012501a1e/melon/resize/416/quality/80/optimize'},
+   {id:10, singer:'10CM', age:40, type:'duo', debut:'10.04', birth:'83.03.01', fans:153121, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/004/68/244/468244_20201223141115_500.jpg?689404a663f1e9612be7fb4ff553f137/melon/resize/416/quality/80/optimize'},
+   {id:11, singer:'Car, the Garden', age:33, type:'solo', debut:'13.09', birth:'90.10.23', fans:53214, image:'https://cdnimg.melon.co.kr/cm2/artistcrop/images/007/35/506/735506_500.jpg?b6bc51895e2a015477e9f39fc283bb32/melon/resize/416/quality/80/optimize'},
+]

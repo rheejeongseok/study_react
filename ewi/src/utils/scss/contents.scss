@@ -1,0 +1,363 @@
+@import "_mixin.scss";
+
+@font-face {
+   font-family: 'notosans';
+   font-weight: 100;
+   src: url('../fonts/NotoSansKR-Light-Hestia.eot');
+   src: url('../fonts/NotoSansKR-Light-Hestia.eot#iefix') format('embedded-opentype'),
+      url('../fonts/NotoSansKR-Light-Hestia.woff') format('woff'),
+      url('../fonts/NotoSansKR-Light-Hestia.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'notosans';
+   font-weight: 200;
+   src: url('../fonts/NotoSansKR-DemiLight-Hestia.eot');
+   src: url('../fonts/NotoSansKR-DemiLight-Hestia.eot#iefix') format('embedded-opentype'),
+      url('../fonts/NotoSansKR-DemiLight-Hestia.woff') format('woff'),
+      url('../fonts/NotoSansKR-DemiLight-Hestia.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'notosans';
+   font-weight: 300;
+   src: url('../fonts/NotoSansKR-Regular-Hestia.eot');
+   src: url('../fonts/NotoSansKR-Regular-Hestia.eot#iefix') format('embedded-opentype'),
+      url('../fonts/NotoSansKR-Regular-Hestia.woff') format('woff'),
+      url('../fonts/NotoSansKR-Regular-Hestia.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'notosans';
+   font-weight: 400;
+   src: url('../fonts/NotoSansKR-Medium-Hestia.eot');
+   src: url('../fonts/NotoSansKR-Medium-Hestia.eot#iefix') format('embedded-opentype'),
+      url('../fonts/NotoSansKR-Medium-Hestia.woff') format('woff'),
+      url('../fonts/NotoSansKR-Medium-Hestia.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'notosans';
+   font-weight: 500;
+   src: url('../fonts/NotoSansKR-Bold-Hestia.eot');
+   src: url('../fonts/NotoSansKR-Bold-Hestia.eot#iefix') format('embedded-opentype'),
+      url('../fonts/NotoSansKR-Bold-Hestia.woff') format('woff'),
+      url('../fonts/NotoSansKR-Bold-Hestia.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'notosans';
+   font-weight: 600;
+   src: url('../fonts/NotoSansKR-Black-Hestia.eot');
+   src: url('../fonts/NotoSansKR-Black-Hestia.eot#iefix') format('embedded-opentype'),
+      url('../fonts/NotoSansKR-Black-Hestia.woff') format('woff'),
+      url('../fonts/NotoSansKR-Black-Hestia.otf') format('opentype');
+}
+
+html {
+   font-size:1.5vw;
+
+   &.pc {
+      font-size:7px;
+   }
+}
+
+.partsWrap {
+   display:flex;
+   width:100%;
+   max-width:480px;
+   height:100%;
+   flex-direction:column;
+   margin:0 auto;
+
+   .partHead {
+      background:#4a81ff;
+      padding-top:vw(50);
+      padding-bottom:vw(43);
+      text-align:center;
+      width:100%;
+      min-height:vw(170);
+      position:relative;
+
+      .text {
+         color:white;
+         font-size:vw(27);
+      }
+
+      .icons {
+         display:flex;
+         justify-content:center;
+         margin-top:vw(15);
+         flex-direction:column;
+         height:0;
+         opacity:0;
+         
+         >div {
+            display:flex;
+            justify-content: center;
+
+            &:first-child {
+               margin-bottom:vw(10);
+            }
+         }
+
+         .iconItem {
+            display:flex;
+            align-items:center;
+            margin-right:vw(14);
+
+            img {
+               width:vw(24);
+               height:vw(24);
+               margin-right:vw(5);
+            }
+
+            span {
+               color:white;
+               font-weight:100;
+               font-family:'notosans';
+               font-size:vw(15);
+            }
+         }
+      }
+
+      .findWrap {
+         position:relative;
+         width:vw(418);
+         height:vw(63);
+         margin:vw(24) auto 0;
+
+         #searchIp {
+            width:100%;
+            height:100%;
+            font-size:vw(23);
+            border:0;
+            box-sizing:border-box;
+            padding-left:vw(50);
+            outline:0;
+            font-weight:500;
+            border-radius:0;
+         }
+      }
+
+      .partWrap {
+         position:absolute;
+         width:vw(418);
+         height:vw(418);
+         overflow:hidden scroll;
+         left:50%;
+         transform:translate(-50%,0);
+         border:1px solid black;
+         background:white;
+         z-index:1;
+         
+
+         &.enter {
+            opacity:0;
+            transform: translate(-50%,0) translateZ(-80px);
+         }
+
+         &.enter-active {
+            opacity:1;
+            transform: translate(-50%,0) translateZ(0);
+            transition:2s;
+         }
+
+         &.exit {
+            opacity:1;
+            transform: translate(-50%,0) translateZ(0);
+         }
+
+         &.exit-active {
+            opacity:0;
+            transform: translate(-50%,0) translateZ(-80px);
+            transition:2s;
+         }
+      }
+
+      .partList {
+
+         li {
+            display:flex;
+            padding:vw(15) 0;
+            width:90%;
+            margin:0 auto;
+            border-bottom:1px solid #999;
+            font-family:'notosans';
+            cursor:pointer;
+
+            .parts {
+               font-size:vw(20);
+               font-weight:500;
+               width:vw(158);
+               line-height:vw(33);
+               margin-right:vw(20);
+               flex:1;
+            }
+
+            .icon {
+               flex:1;
+
+               img {
+                  width:vw(181);
+               }
+            }
+
+            &.noParts {
+               border:0;
+               width:100%;
+               height:vw(418);
+               padding:0;
+               justify-content:center;
+               align-items:center;
+            }
+         }
+      }
+
+   }
+
+   .partBody {
+      font-family:'notosans';
+      .main {
+         text-align:center;
+         font-size:vw(23);
+         color:#b8b8b8;
+         width:100%;
+         margin-top:50%;
+         margin-left:50%;
+         transform:translate(-50%, -50%);
+      }
+      
+      .partBox {
+         margin-left:50%;
+         margin-top:50%;
+         transform:translate(-50%, -50%);
+         text-align:center;
+         width:90%;
+         letter-spacing:vw(-2);
+
+         &.enter {
+            // transform: translate(-50%, -30%, -1400px);
+            transform: translate(-50%, -30%);
+            transform-origin: 50% 0%;
+            filter: blur(4px);
+            opacity: 0;
+         }
+
+         &.enter-active {
+            // transform: translate(-50%, -50%, 0);
+            transform: translate(-50%, -50%);
+            transform-origin: 50% 0%;
+            filter: blur(0px);
+            opacity: 1;
+            transition:1s;
+         }
+
+         img {
+            width:vw(111);
+         }
+
+         .mainTxt {
+            font-size:vw(27);
+
+            .partNm {
+               color:#4a81ff;
+
+               &.no {
+                  color:#f35884;
+                  word-break:keep-all;
+               }
+            }
+
+            .txtBlue {
+               color:#4a81ff;
+            }
+
+            .subTxt {
+               font-size:vw(23);
+               color:#959595;
+            }
+         }
+      }
+   }
+
+   .footer {
+      width:90%;
+      
+      .expWrap {
+         &.enter {
+            transform: translateY(100px);
+            filter: blur(4px);
+            opacity: 0;
+         }
+
+         &.enter-active {
+            transform: translateY(0);
+            filter: blur(0);
+            opacity: 1;
+            transition:1s;
+         }
+      }
+
+      .exp {
+         color:#a5a2a2;
+         font-weight:300;
+         font-size:vw(14);
+         text-align:left;
+         padding:vw(10);
+         width:vw(418);
+         box-sizing:border-box;
+         margin:0 auto vw(10);
+         letter-spacing:-0.8px;
+         
+         &.box {
+            border:1px solid #bbb;
+         }
+      }
+
+      .copyright {
+         font-size:vw(14);
+         color:#d8d6d6;
+         font-weight:100;
+         text-align:center;
+      }
+   }
+
+   .sel_list {
+      position:absolute;
+      top:vw(690);
+      left:50%;
+      transform:translate(-50%, 0);
+      width:vw(419);
+      border:1px solid #9e9e9e;
+      box-sizing:border-box;
+      padding-bottom:vw(20);
+      height:vw(300);
+      background:white;
+      overflow:hidden scroll;
+
+      li {
+         padding:vw(15) 0;
+         width:90%;
+         margin:0 auto;
+         border-bottom:1px solid #999;
+         display:flex;
+         align-items: center;
+         font-size:vw(18);
+         font-weight:500;
+         font-family:'notosans';
+
+         .part {
+            flex:1;
+            width:35%;
+            margin-right:vw(20);
+         }
+
+         img {
+            width:vw(181);
+         }
+
+      }
+   }
+
+}

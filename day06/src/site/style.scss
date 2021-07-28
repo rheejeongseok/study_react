@@ -1,0 +1,46 @@
+.wrap {
+   width:100%;
+   height:100vh;
+}
+
+.header {
+   position:relative;
+   
+   .list {
+      display:flex;
+      border-bottom:1px solid black;
+      justify-content:flex-end;
+      padding:10px 20px;
+   }
+
+   .title {
+      text-align:center;
+      padding:30px;
+      background:#e3e3f7;
+      color:#333;
+      border-bottom:1px solid black;
+   }
+}
+
+.content {
+   width:100%;
+   height:calc(100vh - 132px);
+
+   .initPage {
+      width:100%;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+
+      span {
+         cursor:pointer;
+         margin-bottom:10px;
+
+         &:last-child {
+            margin-bottom:0;
+         }
+      }
+   }
+}

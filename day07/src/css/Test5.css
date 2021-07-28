@@ -1,0 +1,51 @@
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+  width: 500px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.box article {
+  width: 50%;
+  padding: 20px;
+}
+
+.box article h3 {
+  text-align: center;
+}
+
+.box article:nth-child(1) {
+  background: pink;
+}
+
+.box article:nth-child(2) ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box article:nth-child(2) ul li {
+  width: 20%;
+  height: 50px;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.box article:nth-child(2) ul li:nth-child(odd) {
+  background: yellow;
+}
+
+.box article:nth-child(2) ul li:nth-child(even) {
+  background: skyblue;
+}
+
+.box article:nth-child(2) ul li:hover {
+  -webkit-transform: scale(1.3) rotate(10deg);
+          transform: scale(1.3) rotate(10deg);
+  background: tomato;
+}
