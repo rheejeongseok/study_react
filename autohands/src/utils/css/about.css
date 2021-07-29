@@ -1,16 +1,198 @@
 .movie {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .movie video {
-  width: auto;
-  height: auto;
   opacity: 0.5;
-  min-width: 100%;
-  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mainCopy {
+  position: absolute;
+  bottom: 166px;
+  left: 7.916%;
+}
+
+.mainCopy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 2px;
+  background: white;
+}
+
+.mainCopy h1 {
+  font-size: 60px;
+  color: white;
+  font-weight: 100;
+  line-height: 1.3;
+}
+
+.mouse {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
+
+.mouse .shape {
+  width: 28px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 28px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mouse .shape::before {
+  content: '';
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  margin: -2px 0 0 -2px;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  -webkit-animation: ani-mouse 1.5s linear infinite;
+          animation: ani-mouse 1.5s linear infinite;
+}
+
+.mouse span {
+  color: white;
+  font-size: 15px;
+}
+
+@-webkit-keyframes ani-mouse {
+  0% {
+    opacity: 0;
+    top: 29%;
+  }
+  50% {
+    opacity: 1;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 80%;
+  }
+}
+
+@keyframes ani-mouse {
+  0% {
+    opacity: 0;
+    top: 29%;
+  }
+  50% {
+    opacity: 1;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 80%;
+  }
+}
+
+.aboutInfo {
+  background: #f4f4f4;
+  padding-top: 80px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutInfo .aboutTxt h3 {
+  font-weight: 200;
+  font-size: 60px;
+  letter-spacing: -2px;
+  color: #333;
+}
+
+.aboutInfo .aboutTxt h3 span {
+  color: #275cab;
+}
+
+.aboutInfo .aboutTxt p {
+  font-size: 40px;
+  line-height: 1.2;
+  font-size: 24px;
+  color: #999;
+  margin-top: 35px;
+  line-height: 1.4;
+  font-weight: 100;
+}
+
+.aboutInfo .aboutCp {
+  display: inline-block;
+  min-height: 370px;
+  background: white;
+  padding: 40px 0 0 40px;
+  width: 100%;
+  max-width: 1250px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.aboutInfo .aboutCp .infoTxt {
+  text-align: left;
+  width: calc(100% - 444px);
+}
+
+.aboutInfo .aboutCp .infoBlue {
+  width: 444px;
+  height: 340px;
+  padding: 98px 0 0 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+.aboutInfo .aboutCp .infoBlue::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -20px;
+  background: #275caa;
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.aboutInfo .aboutCp .infoBlue li {
+  position: relative;
+  z-index: 1;
+}
+
+.aboutInfo .aboutCp .testBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: red;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.aboutInfo .aboutCp .testBox.n {
+  -webkit-clip-path: polygon(0% 15%, 0 0, 23% 0, 71% 38%, 71% 0, 100% 0, 100% 85%, 100% 100%, 78% 100%, 24% 57%, 24% 100%, 0 100%);
+          clip-path: polygon(0% 15%, 0 0, 23% 0, 71% 38%, 71% 0, 100% 0, 100% 85%, 100% 100%, 78% 100%, 24% 57%, 24% 100%, 0 100%);
+}
+
+.aboutInfo .aboutCp .testBox.l {
+  -webkit-clip-path: polygon(0% 15%, 0 0, 15% 0%, 25% 0, 25% 72%, 100% 72%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+          clip-path: polygon(0% 15%, 0 0, 15% 0%, 25% 0, 25% 72%, 100% 72%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
 }

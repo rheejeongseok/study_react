@@ -1,3 +1,23 @@
+
+$font-t : 100;
+$font-l : 200;
+$font-dl : 300;
+$font-r : 400;
+$font-m : 500;
+$font-bo : 600;
+$font-bl : 700;
+
+@mixin transCenter($h, $v){
+	transform:translate($h, $v);
+	-webkit-transform:translate($h, $v);
+}
+
+@mixin size($w, $h){
+	width:$w;
+	height:$h;
+}
+
 @function vw($val){
 	@return ($val*100)/768 * 1vw;
 }
+
