@@ -1,0 +1,74 @@
+// eslint-disable-next-line import/no-anonymous-default-export
+export default [
+	{
+		locate_name:"오토핸즈 본사",
+		locate_depth01_id:0,
+		locate_depth01_lat:37.529202,
+		locate_depth01_lng:126.920775,
+		locate_depth02 : ""
+	},
+	{
+		locate_name:"센터",
+		locate_depth01_id:1,
+		locate_depth01_lat:37.533830,
+		locate_depth01_lng:126.651973,
+		locate_depth02 : [
+			{
+				locate_name:"인천",
+				locate_depth02_id:1,
+				locate_depth02_lat:37.533830,
+				locate_depth02_lng:126.651973,
+			},
+			{
+				locate_name:"용인",
+				locate_depth02_id:2,
+				locate_depth02_lat:37.26937262214038,
+				locate_depth02_lng:127.09327993099471,
+			},
+			{
+				locate_name:"대구",
+				locate_depth02_id:3,
+				locate_depth02_lat:35.872226,
+				locate_depth02_lng:128.718781,
+			},
+			{
+				locate_name:"광주",
+				locate_depth02_id:4,
+				locate_depth02_lat:35.179367,
+				locate_depth02_lng:126.806459,
+			},
+		]
+	},
+	{
+		locate_name:"순회정비서비스센터",
+		locate_depth01_id:5,
+		locate_depth01_lat:37.357356,
+		locate_depth01_lng:126.874904,
+		locate_depth02 : [
+			{
+				locate_name:"안산",
+				locate_depth02_id:5,
+				locate_depth02_lat:37.357356,
+				locate_depth02_lng:126.874904,
+			},
+			{
+				locate_name:"김포",
+				locate_depth02_id:6,
+				locate_depth02_lat:37.656334,
+				locate_depth02_lng:126.671978,
+			},
+			{
+				locate_name:"남양주",
+				locate_depth02_id:7,
+				locate_depth02_lat:37.6217476648364,
+				locate_depth02_lng:127.20887494063429,
+			},
+			{
+				locate_name:"화성",
+				locate_depth02_id:8,
+				locate_depth02_lat:37.244919,
+				locate_depth02_lng:126.9449597,
+			},
+		]
+	},
+]

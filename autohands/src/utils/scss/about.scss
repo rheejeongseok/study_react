@@ -151,16 +151,300 @@
 			@include transCenter(-50%, -50%);
 			width:400px;
 			height:400px;
-			background:red;
+			background:url('https://pbs.twimg.com/media/Epho0CbU8AIJvSS.jpg');
+			background-size:100% 100%;
 			transition: 2s;
-			
-			&.n {
+			// clip-path: polygon(0% 15%, 0 0, 23% 0, 71% 38%, 71% 0, 100% 0, 100% 85%, 100% 100%, 78% 100%, 24% 57%, 24% 100%, 0 100%);
+			clip-path: circle(19.5% at 69% 28%);
+			animation:naver 6s alternate infinite;
+		}
+
+		@keyframes naver {
+			20% {
 				clip-path: polygon(0% 15%, 0 0, 23% 0, 71% 38%, 71% 0, 100% 0, 100% 85%, 100% 100%, 78% 100%, 24% 57%, 24% 100%, 0 100%);
 			}
-
-			&.l {
-				clip-path: polygon(0% 15%, 0 0, 15% 0%, 25% 0, 25% 72%, 100% 72%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+			40% {
+				clip-path: polygon(40% 0, 39% 0, 42% 0, 85% 0%, 100% 0, 67% 0, 100% 100%, 77% 100%, 54% 63%, 50% 63%, 24% 100%, 0 100%);
+			}
+			60% {
+				clip-path: polygon(0 0, 22% 0, 47% 57%, 54% 56%, 77% 0, 100% 0, 63% 100%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 38% 100%);
+			}
+			80% {
+				clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%, 100% 17%, 23% 17%, 23% 41%, 100% 41%, 100% 63%, 25% 64%, 25% 83%, 100% 83%);
+			}
+			100% {
+				clip-path: polygon(0 0, 0 100%, 33% 100%, 33% 64%, 67% 63%, 68% 100%, 100% 100%, 100% 63%, 68% 31%, 100% 0);
 			}
 		}
+
+		@keyframes test1 {
+			20% {
+				clip-path: circle(19.5% at 69% 28%);
+			}
+			40% {
+				clip-path: circle(19.5% at 30% 73%);
+			}
+			60% {
+				clip-path: circle(19.5% at 80% 75%);
+			}
+			80% {
+				clip-path: circle(19.5% at 50% 50%);
+			}
+			100% {
+				clip-path: circle(71.0% at 50% 50%);
+			}
+		}
+	}
+}
+.aHistory {
+	background:rgb(104, 136, 255);
+}
+
+.historyWrap {
+	width:1200px;
+	padding:0 100px;
+	position:relative;
+	box-sizing:border-box;
+	margin:100px auto 0;
+
+	.historyItem {
+		font-size:0;
+
+		.historyImg {
+			width:100%;
+			height:300px;
+			background:url('../../images/about/his21_bg.png') no-repeat;
+			
+			img {
+				width:100%;
+				height:100%;
+			}
+		}
+
+		.historyList {
+			width:100%;
+			background:white;
+			min-height:270px;
+			padding:26px 36px;
+
+			h3 {
+				font-size:42px;
+				color:#333;
+				font-weight:$font-m;
+				margin-top:0;
+				margin-bottom:13px;
+			}
+
+			li {
+				font-size:18px;
+				color:#333;
+				font-weight:$font-dl;
+				margin-bottom:5px;
+
+				.num {
+					display:inline-block;
+					font-weight:$font-m;
+					width:35px;
+					padding-top:3px;
+				}
+
+				.txt {
+
+				}
+
+			}
+		}
+	}
+
+	.progress {
+		display:block;
+		margin:90px auto 0;
+		width:600px;
+		height:70px;
+
+		.car_wrap {
+			position:relative;
+			width:100%;
+			height:27px;
+			font-size:0;
+			text-align:left;
+
+			.car {
+				display:inline-block;
+				position:absolute;
+				left:0;
+				top:0;
+				margin-left:-100px;
+				width:100px;
+				height:36px;
+				background:url('../../images/about/img_history_car.png') 0 0 no-repeat;
+				transition:1s;
+
+				.tire {
+					display:block;
+					position:absolute;
+					top:18px;
+					background:url('../../images/about/tire.png') 0 0 no-repeat;
+					width:16px;
+					height:16px;
+					transition: 1s;
+
+					&.active {
+						animation-name:tire;
+						animation-duration:1s;
+					}
+
+					@keyframes tire {
+						0% {
+							transform:rotate(0);
+						}
+						100% {
+							transform:rotate(360deg);
+						}
+					}
+
+					&.tire01 {
+						left:14px;
+					}
+
+					&.tire02 {
+						right:8px;
+					}
+				}
+			}
+		}
+
+		.bar {
+			margin-top: 10px;
+			width: 100%;
+			height: 6px;
+			background-color: #fff;
+			font-size: 0;
+			text-align: left;
+			border-radius: 20px;
+
+			.barInn {
+				display:inline-block;
+				width: 0;
+				height: 6px;
+				background-color: #1c58b0;
+				border-radius: 20px;
+				-webkit-border-radius: 20px;
+				transition:1s;
+			}
+		}
+	}
+}
+
+.aMap {
+	background:rgb(244, 244, 244);
+}
+
+.mapBox {
+	padding:150px;
+
+	.tabMenu {
+		width:100%;
+		height:60px;
+		margin-bottom: 90px;
+    position: relative;
+    background: #fff;
+    box-sizing: border-box;
+		font-size:0;
+
+		.tabDepth01 {
+			display:inline-block;
+			width: 33.3%;
+			position: relative;
+			height: 60px;
+			line-height: 60px;
+			vertical-align:top;
+
+			&:hover {
+
+				&::before {
+					content:'';
+					width:50%;
+					height:4px;
+					background: #275cac;
+					text-align: center;
+					position: absolute;
+					bottom: 0;
+					left: 25%;
+				}
+
+				&::after {
+					content:'';
+					display: inline-block;
+					border-color: #275cac transparent transparent transparent;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 13px;
+					vertical-align: top;
+					position: absolute;
+					bottom: -26px;
+					left:50%;
+					transform:translate(-50%, 0);
+				}
+
+				.tabDepth02 {
+					display:block;
+				}
+
+			}
+
+			>a {
+				font-size:30px;
+				display:inline-block;
+				width:100%;
+				height:100%;
+				text-align:center;
+				color:#333;
+				text-decoration:none;
+			}
+
+			.tabDepth02 {
+				width:100%;
+				font-size:0;
+				display:none;
+
+				li {
+					display:inline-block;
+					width:25%;
+
+					a {
+						display:inline-block;
+						font-size:20px;
+						width:100%;
+						text-align:center;
+						color:#333;
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+
+	.mapWrap {
+		width:100%;
+		height:510px;
+		margin:0 auto;
+		border: 1px solid #ccc;
+    background: #275cac;
+    box-sizing: border-box;
+		font-size:0;
+
+		.mapTxt {
+			width:42%;
+			padding:50px 45px 0 50px;
+			box-sizing:border-box;
+			text-align:left;
+		}
+
+		.map {
+			width:58%;
+		}
+
 	}
 }

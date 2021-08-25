@@ -5,21 +5,6 @@ import '../../../utils/css/about.css';
 
 const AboutInfo = () => {
 
-	const [cls,setCls] = useState('');
-	const [clip,setClip] = useState(['n','l']);
-
-	useEffect(() => {
-		console.log("setInterval")
-		const r = setInterval(() => {
-			setCls(clip[Math.floor(Math.random() * clip.length)])
-		},2000)
-		
-		return () => {
-			console.log("clearInterval")
-			clearInterval(r)
-		}
-	},[]);
-
 	return (
 		<div className="section">
 			<div className="aboutInfo">
@@ -61,7 +46,7 @@ const AboutInfo = () => {
 							<p>임직원 수</p>
 						</li>
 					</ul>
-					<div className={`testBox ${cls}`}></div>
+					<div className={`testBox`}></div>
 				</div>
 			</div>
 		</div>
